@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cheakamus Lake — A Field Guide to Garibaldi's Gentlest Trail, Whistler BC</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A field guide to Cheakamus Lake in Garibaldi Provincial Park — the 3.5 km old-growth walk to a glacier-fed turquoise lake south of Whistler. Trail notes kilometre by kilometre, camping at Singing Creek, seasons, bears, bugs, and honest advice.">
+<link rel="canonical" href="https://cheakamuslake.com/">
+<meta property="og:title" content="Cheakamus Lake — A Field Guide to Garibaldi's Gentlest Trail, Whistler BC">
+<meta property="og:description" content="The 3.5 km old-growth walk to a glacier-fed turquoise lake south of Whistler. Trail notes, camping, seasons, and honest advice.">
+<meta property="og:url" content="https://cheakamuslake.com/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f3f1e9;
+    --paper-deep: #eae6d9;
+    --paper-edge: #e0dbcb;
+    --ink: #1b1a16;
+    --ink-soft: #35322a;
+    --ink-mute: #726b5c;
+    --rule: #d9d3c2;
+    --rule-strong: #c3bca7;
+    --pine: #14302a;
+    --pine-deep: #0e241f;
+    --pine-soft: #2a4a41;
+    --glacier: #2c9d94;
+    --glacier-deep: #1d7a74;
+    --glacier-pale: #d9ece7;
+    --glacier-ice: #a8d8d0;
+    --bark: #4a3a2c;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper); color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--glacier); color: #fff; }
+
+  a { color: inherit; text-decoration: none; }
+  .ln { border-bottom: 1px solid var(--rule-strong); transition: border-color .2s, color .2s; }
+  .ln:hover { border-bottom-color: var(--glacier-deep); color: var(--glacier-deep); }
+
+  h1, h2, h3 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin: 0;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+  }
+  h1 { font-size: clamp(2.7rem, 6.4vw, 4.8rem); font-weight: 340; }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.25rem); }
+  h3 { font-size: 1.22rem; font-weight: 500; line-height: 1.3; }
+  p { margin: 0 0 1.05rem; color: var(--ink-soft); font-size: 1.03rem; }
+
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 1.75rem; }
+  .narrow { max-width: 720px; margin: 0 auto; padding: 0 1.75rem; }
+
+  .eyebrow {
+    display: flex; align-items: center; gap: 1rem;
+    font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase;
+    font-weight: 600; color: var(--glacier-deep);
+    margin-bottom: 1.1rem;
+  }
+  .eyebrow::after { content: ""; height: 1px; background: var(--rule-strong); flex: 0 0 3.5rem; }
+  .eyebrow.center { justify-content: center; }
+  .eyebrow.center::before { content: ""; height: 1px; background: var(--rule-strong); flex: 0 0 3.5rem; }
+  .on-dark .eyebrow { color: var(--glacier-ice); }
+  .on-dark .eyebrow::after, .on-dark .eyebrow.center::before { background: var(--pine-soft); }
+
+  /* ---------- NAV ---------- */
+  nav.top {
+    position: sticky; top: 0; z-index: 60;
+    background: rgba(243,241,233,0.88);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+  nav.top .inner {
+    max-width: 1140px; margin: 0 auto;
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding: 0.95rem 1.75rem;
+  }
+  .wordmark { font-family: "Fraunces", serif; font-size: 1.08rem; font-weight: 500; letter-spacing: -0.01em; }
+  .wordmark .no { font-style: italic; color: var(--glacier-deep); }
+  .wordmark small {
+    display: block; font-family: "Inter", sans-serif; font-weight: 500;
+    font-size: 0.58rem; letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--ink-mute); margin-top: 0.12rem;
+  }
+  nav.top .links { display: flex; gap: 1.6rem; }
+  nav.top .links a {
+    font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase;
+    font-weight: 500; color: var(--ink-soft);
+  }
+  nav.top .links a:hover { color: var(--glacier-deep); }
+  @media (max-width: 780px) { nav.top .links { display: none; } }
+
+  /* ---------- HERO ---------- */
+  header.hero { border-bottom: 1px solid var(--rule); background: var(--paper); }
+  .hero-art { display: block; width: 100%; height: auto; }
+
+  .title-block { text-align: center; padding: 3.5rem 1.75rem 2.75rem; max-width: 880px; margin: 0 auto; }
+  .title-block .deck {
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 340;
+    font-size: clamp(1.15rem, 2.2vw, 1.45rem); line-height: 1.5;
+    color: var(--ink-soft); max-width: 34em; margin: 1.4rem auto 0;
+    font-variation-settings: "opsz" 60, "SOFT" 30;
+  }
+
+  /* ---------- COORD STRIP ---------- */
+  .coordstrip {
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper-deep);
+    padding: 0.7rem 0;
+  }
+  .coordstrip .inner {
+    max-width: 1140px; margin: 0 auto; padding: 0 1.75rem;
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 2.4rem;
+    font-size: 0.67rem; letter-spacing: 0.22em; text-transform: uppercase;
+    font-weight: 500; color: var(--ink-mute);
+  }
+  .coordstrip b { color: var(--ink-soft); font-weight: 600; }
+
+  /* ---------- KM LINE ---------- */
+  section.kmline { padding: 6rem 0 6.5rem; }
+  .km-scroll { overflow-x: auto; padding-bottom: 1rem; scrollbar-width: thin; }
+  .km-track {
+    min-width: 860px;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    margin-top: 3.25rem;
+  }
+  .km-track::before {
+    content: ""; position: absolute; left: 0.6rem; right: 0.6rem; top: 9px;
+    height: 2px; background: var(--rule-strong);
+  }
+  .km-stop { position: relative; padding: 2rem 1.5rem 0 0.35rem; }
+  .km-stop::before {
+    content: ""; position: absolute; left: 0.35rem; top: 3px;
+    width: 14px; height: 14px; border-radius: 50%;
+    background: var(--paper); border: 2px solid var(--pine);
+  }
+  .km-stop.lake::before { background: var(--glacier); border-color: var(--glacier-deep); }
+  .km-stop .km {
+    position: absolute; top: -2.2rem; left: 0.35rem;
+    font-family: "Fraunces", serif; font-size: 1.35rem; font-weight: 500;
+    color: var(--pine); letter-spacing: -0.02em;
+  }
+  .km-stop .km small { font-family: "Inter", sans-serif; font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-mute); font-weight: 600; margin-left: 0.25rem; }
+  .km-stop h3 { font-size: 1.06rem; margin-bottom: 0.4rem; color: var(--ink); }
+  .km-stop p { font-size: 0.9rem; line-height: 1.6; margin: 0; color: var(--ink-soft); }
+
+  /* ---------- NOTEBOOK (essay + sidebar) ---------- */
+  section.notebook { padding: 6rem 0 6.5rem; border-top: 1px solid var(--rule); }
+  .notebook-grid { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(240px, 1fr); gap: 4.5rem; align-items: start; }
+  @media (max-width: 900px) { .notebook-grid { grid-template-columns: 1fr; gap: 3rem; } }
+  .essay p { font-size: 1.07rem; line-height: 1.78; }
+  .essay > p:first-of-type::first-letter {
+    font-family: "Fraunces", serif;
+    font-size: 4.4rem; line-height: 0.82;
+    float: left; padding: 0.35rem 0.65rem 0 0;
+    color: var(--pine); font-weight: 400;
+  }
+  .pull {
+    margin: 2.75rem 0; padding: 2rem 0;
+    border-top: 1px solid var(--rule-strong); border-bottom: 1px solid var(--rule-strong);
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 340;
+    font-size: clamp(1.35rem, 2.6vw, 1.7rem); line-height: 1.45;
+    color: var(--pine); text-align: center;
+    font-variation-settings: "opsz" 90, "SOFT" 30;
+  }
+  .quickstats {
+    position: sticky; top: 5.5rem;
+    background: var(--glacier-pale);
+    border: 1px solid var(--glacier-ice);
+    border-radius: 3px;
+    padding: 1.6rem 1.5rem;
+  }
+  .quickstats h4 {
+    font-size: 0.68rem; letter-spacing: 0.24em; text-transform: uppercase;
+    font-weight: 600; color: var(--glacier-deep); margin: 0 0 1.1rem;
+  }
+  .quickstats dl { margin: 0; }
+  .quickstats .qrow {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+    padding: 0.6rem 0; border-top: 1px solid var(--glacier-ice);
+  }
+  .quickstats .qrow:first-of-type { border-top: none; padding-top: 0; }
+  .quickstats dt { font-size: 0.8rem; color: var(--ink-mute); font-weight: 500; margin: 0; }
+  .quickstats dd { font-family: "Fraunces", serif; font-size: 1.02rem; font-weight: 500; color: var(--ink); margin: 0; text-align: right; }
+  .quickstats .foot { margin-top: 1.1rem; font-size: 0.78rem; line-height: 1.55; color: var(--ink-mute); }
+
+  /* ---------- REMEMBER LIST ---------- */
+  section.remember { padding: 6rem 0 6.5rem; border-top: 1px solid var(--rule); background: var(--paper-deep); }
+  .rem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 4rem; margin-top: 2.5rem; }
+  @media (max-width: 760px) { .rem-grid { grid-template-columns: 1fr; } }
+  .rem-item { display: grid; grid-template-columns: 3rem 1fr; gap: 1.1rem; padding: 1.4rem 0; border-top: 1px solid var(--rule-strong); align-items: start; }
+  .rem-item .n { font-family: "Fraunces", serif; font-style: italic; font-size: 1.5rem; color: var(--glacier-deep); font-weight: 340; line-height: 1.1; }
+  .rem-item h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
+  .rem-item p { font-size: 0.93rem; line-height: 1.6; margin: 0; }
+
+  /* ---------- SEASONS (dark) ---------- */
+  section.seasons { background: var(--pine); color: var(--glacier-pale); padding: 6.5rem 0 7rem; }
+  section.seasons h2 { color: #f2f0e6; }
+  section.seasons .intro { color: var(--glacier-ice); max-width: 52ch; }
+  .season-table { margin-top: 3rem; border-top: 1px solid var(--pine-soft); }
+  .season-row {
+    display: grid; grid-template-columns: 160px 1fr 200px;
+    gap: 2rem; padding: 1.5rem 0;
+    border-bottom: 1px solid var(--pine-soft);
+    align-items: baseline;
+  }
+  @media (max-width: 820px) { .season-row { grid-template-columns: 1fr; gap: 0.4rem; } }
+  .season-row .when { font-family: "Fraunces", serif; font-style: italic; font-size: 1.2rem; color: var(--glacier-ice); }
+  .season-row .what { font-size: 0.97rem; line-height: 1.65; color: #d8e4dd; }
+  .season-row .verdict {
+    font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600;
+    color: var(--glacier-ice); text-align: right;
+  }
+  @media (max-width: 820px) { .season-row .verdict { text-align: left; } }
+  .season-note { margin-top: 2rem; font-size: 0.9rem; color: var(--glacier-ice); border-left: 2px solid var(--glacier); padding-left: 1.1rem; line-height: 1.65; }
+  .season-note a { border-bottom: 1px solid var(--pine-soft); }
+  .season-note a:hover { border-bottom-color: var(--glacier-ice); }
+
+  /* ---------- CAMPING ---------- */
+  section.camping { padding: 6rem 0 6.5rem; border-bottom: 1px solid var(--rule); }
+  .camp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2.25rem; }
+  @media (max-width: 760px) { .camp-grid { grid-template-columns: 1fr; } }
+  .camp-card { border: 1px solid var(--rule-strong); border-radius: 3px; padding: 1.75rem 1.6rem; background: var(--paper); }
+  .camp-card .tag { font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; color: var(--glacier-deep); display: block; margin-bottom: 0.6rem; }
+  .camp-card h3 { margin-bottom: 0.6rem; }
+  .camp-card p { font-size: 0.95rem; margin: 0; }
+  .reserve-note {
+    margin-top: 1.5rem; padding: 1.1rem 1.3rem;
+    background: var(--glacier-pale); border-left: 2px solid var(--glacier);
+    font-size: 0.93rem; color: var(--ink-soft); line-height: 1.65;
+  }
+  .reserve-note strong { display: block; font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--glacier-deep); margin-bottom: 0.3rem; font-weight: 600; }
+
+  /* ---------- HONEST ---------- */
+  section.honest { padding: 6rem 0 6.5rem; }
+  section.honest em { color: var(--ink); }
+
+  /* ---------- SUPPORT ---------- */
+  section.support { padding: 5.5rem 0 6rem; border-top: 1px solid var(--rule); background: var(--paper-deep); }
+  .support-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 3.5rem; align-items: start; margin-top: 0.5rem; }
+  @media (max-width: 820px) { .support-grid { grid-template-columns: 1fr; gap: 2rem; } }
+  .support-grid p { font-size: 0.99rem; }
+  .support-cta {
+    display: inline-block; margin-top: 0.4rem;
+    padding: 0.7rem 1.4rem;
+    background: var(--pine); color: var(--glacier-pale);
+    font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600;
+    border-radius: 2px; transition: background .2s;
+  }
+  .support-cta:hover { background: var(--glacier-deep); }
+  .support-aside { border-left: 1px solid var(--rule-strong); padding-left: 2rem; }
+  @media (max-width: 820px) { .support-aside { border-left: none; padding-left: 0; border-top: 1px solid var(--rule-strong); padding-top: 1.5rem; } }
+  .support-aside h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+  .support-aside p { font-size: 0.9rem; color: var(--ink-soft); margin: 0; }
+
+  /* ---------- FAQ ---------- */
+  section.faq { padding: 6rem 0 6.5rem; }
+  .faq-list { margin-top: 2.25rem; border-top: 1px solid var(--rule-strong); }
+  details.qa { border-bottom: 1px solid var(--rule-strong); }
+  details.qa > summary {
+    list-style: none; cursor: pointer; outline: none;
+    padding: 1.35rem 2.5rem 1.35rem 0;
+    position: relative;
+    font-family: "Fraunces", serif; font-weight: 460;
+    font-size: 1.16rem; line-height: 1.35; letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  details.qa > summary::-webkit-details-marker { display: none; }
+  details.qa > summary:hover { color: var(--glacier-deep); }
+  details.qa > summary::after {
+    content: "+"; position: absolute; right: 0.25rem; top: 50%;
+    transform: translateY(-50%);
+    font-family: "Inter", sans-serif; font-weight: 300; font-size: 1.5rem;
+    color: var(--ink-mute); transition: transform .2s;
+  }
+  details.qa[open] > summary::after { transform: translateY(-50%) rotate(45deg); }
+  .qa .ans { padding: 0 0 1.6rem; }
+  .qa .ans p { font-size: 0.99rem; margin: 0 0 0.85rem; }
+  .qa .ans p:last-child { margin: 0; }
+
+  /* ---------- FOOTER ---------- */
+  footer.foot { background: var(--pine-deep); color: var(--glacier-pale); padding: 3.5rem 0 2.5rem; }
+  .foot-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem; }
+  @media (max-width: 720px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-grid h4 { font-size: 0.66rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--glacier-ice); font-weight: 600; margin: 0 0 0.85rem; }
+  .foot-grid p { font-size: 0.88rem; color: #c9d8d1; margin: 0; line-height: 1.65; }
+  .foot-grid ul { list-style: none; padding: 0; margin: 0; }
+  .foot-grid li { margin-bottom: 0.45rem; font-size: 0.88rem; }
+  .foot-grid li a { color: #c9d8d1; border-bottom: 1px solid transparent; }
+  .foot-grid li a:hover { color: #fff; border-bottom-color: var(--glacier); }
+  .foot-bottom {
+    border-top: 1px solid var(--pine-soft); padding-top: 1.4rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem 2rem;
+    font-size: 0.74rem; color: #9db4aa;
+  }
+  .foot-bottom em { font-family: "Fraunces", serif; }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="top">
+  <div class="inner">
+    <a class="wordmark" href="#top">Cheakamus Lake <span class="no">— No. 02</span>
+      <small>A Sea to Sky Trails field guide</small>
+    </a>
+    <div class="links">
+      <a href="#trail">The Trail</a>
+      <a href="#notebook">Notebook</a>
+      <a href="#seasons">Seasons</a>
+      <a href="#camping">Camping</a>
+      <a href="#faq">Questions</a>
+      <a href="https://seatoskytrails.com/">All Guides</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <!-- Old-growth trunks framing a sliver of glacial turquoise -->
+  <svg class="hero-art" viewBox="0 0 1440 540" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration: giant old-growth cedar trunks framing a sliver of turquoise lake beneath a mountain ridge">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e9efe4"/>
+        <stop offset="1" stop-color="#d5e4da"/>
+      </linearGradient>
+      <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#5fc0b4"/>
+        <stop offset="1" stop-color="#2c9d94"/>
+      </linearGradient>
+      <linearGradient id="trunkL" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#241b12"/>
+        <stop offset="1" stop-color="#4a3a2c"/>
+      </linearGradient>
+      <linearGradient id="trunkR" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#4a3a2c"/>
+        <stop offset="1" stop-color="#241b12"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect width="1440" height="540" fill="url(#sky)"/>
+
+    <!-- distant ridge -->
+    <path d="M240 265 L360 195 L430 235 L520 170 L610 225 L700 185 L800 230 L900 195 L1000 240 L1100 210 L1200 250 L1200 330 L240 330 Z" fill="#8fae9f"/>
+    <path d="M520 172 L540 185 L528 196 L545 205 L520 214 L505 200 L512 188 Z" fill="#eef3ee" opacity="0.9"/>
+    <path d="M900 197 L916 210 L905 219 L918 228 L898 234 L886 219 Z" fill="#eef3ee" opacity="0.85"/>
+
+    <!-- far forest band -->
+    <path d="M240 330 L240 292 L268 302 L262 280 L288 292 L296 268 L322 288 L334 262 L356 286 L374 260 L392 284 L412 258 L430 284 L452 262 L468 288 L492 264 L508 290 L532 266 L548 292 L572 268 L588 294 L612 270 L628 296 L652 272 L668 298 L692 274 L708 300 L732 276 L748 302 L772 278 L788 304 L812 280 L828 306 L852 282 L868 308 L892 284 L908 310 L932 286 L948 312 L972 288 L988 314 L1012 290 L1028 316 L1052 292 L1068 318 L1092 294 L1108 320 L1132 296 L1148 322 L1172 298 L1188 324 L1200 306 L1200 330 Z" fill="#2a4a41"/>
+
+    <!-- the lake sliver -->
+    <rect x="240" y="330" width="960" height="92" fill="url(#lake)"/>
+    <g stroke="#bfe6de" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.6">
+      <path d="M300 352 q22 -4 44 0 t44 0"/>
+      <path d="M560 366 q22 -4 44 0 t44 0 t44 0"/>
+      <path d="M940 350 q22 -4 44 0 t44 0"/>
+      <path d="M430 388 q22 -4 44 0 t44 0"/>
+      <path d="M790 396 q22 -4 44 0 t44 0 t44 0"/>
+      <path d="M330 404 q22 -4 44 0"/>
+      <path d="M1050 384 q22 -4 44 0 t44 0"/>
+    </g>
+
+    <!-- near shore -->
+    <path d="M240 422 C 420 412 560 430 720 424 C 900 418 1060 432 1200 424 L1200 540 L240 540 Z" fill="#14302a"/>
+    <!-- driftwood log on shore -->
+    <path d="M480 446 C 560 440 640 442 700 448 L698 456 C 630 452 556 450 484 455 Z" fill="#3a2e21"/>
+    <g stroke="#5b4a37" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.8">
+      <path d="M500 449 C 560 445 630 445 686 450"/>
+    </g>
+    <!-- ferns -->
+    <g stroke="#2a4a41" stroke-width="2" stroke-linecap="round" fill="none">
+      <path d="M330 500 C 335 470 350 452 372 444"/>
+      <path d="M330 500 C 340 478 360 466 380 462"/>
+      <path d="M1080 505 C 1075 475 1058 456 1036 448"/>
+      <path d="M1080 505 C 1070 482 1050 470 1030 466"/>
+    </g>
+    <g stroke="#3d6154" stroke-width="1.4" stroke-linecap="round" fill="none">
+      <path d="M344 478 l14 -6 M340 486 l16 -5 M352 468 l12 -7 M360 460 l10 -8"/>
+      <path d="M1066 482 l-14 -6 M1070 490 l-16 -5 M1058 472 l-12 -7 M1050 464 l-10 -8"/>
+    </g>
+
+    <!-- LEFT trunks -->
+    <path d="M0 0 L118 0 L108 540 L-20 540 Z" fill="url(#trunkL)"/>
+    <path d="M150 0 L238 0 L226 540 L146 540 Z" fill="#33271b"/>
+    <!-- RIGHT trunks -->
+    <path d="M1322 0 L1440 0 L1460 540 L1332 540 Z" fill="url(#trunkR)"/>
+    <path d="M1202 0 L1290 0 L1294 540 L1214 540 Z" fill="#33271b"/>
+
+    <!-- bark texture -->
+    <g stroke="#5b4a37" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.55">
+      <path d="M36 20 C 32 160 34 320 30 520"/>
+      <path d="M70 0 C 66 180 70 360 64 540"/>
+      <path d="M96 40 C 94 200 96 380 92 530"/>
+      <path d="M172 10 C 170 170 172 350 168 530"/>
+      <path d="M204 30 C 200 190 204 370 198 540"/>
+      <path d="M1362 20 C 1366 160 1364 320 1370 520"/>
+      <path d="M1396 0 C 1400 180 1396 360 1404 540"/>
+      <path d="M1424 40 C 1426 200 1424 380 1430 530"/>
+      <path d="M1232 10 C 1234 170 1232 350 1238 530"/>
+      <path d="M1264 30 C 1268 190 1264 370 1272 540"/>
+    </g>
+    <!-- burl / bark knots -->
+    <g stroke="#5b4a37" stroke-width="1.4" fill="none" opacity="0.5">
+      <ellipse cx="52" cy="250" rx="9" ry="17"/>
+      <ellipse cx="188" cy="400" rx="7" ry="13"/>
+      <ellipse cx="1388" cy="300" rx="9" ry="16"/>
+      <ellipse cx="1248" cy="180" rx="7" ry="12"/>
+    </g>
+
+    <!-- canopy fronds, top corners -->
+    <g fill="#14302a">
+      <path d="M100 0 C 180 30 260 34 340 22 C 300 56 240 70 180 62 C 230 84 290 88 340 78 C 290 108 220 112 160 96 C 120 84 100 50 90 0 Z"/>
+      <path d="M1340 0 C 1260 30 1180 34 1100 22 C 1140 56 1200 70 1260 62 C 1210 84 1150 88 1100 78 C 1150 108 1220 112 1280 96 C 1320 84 1340 50 1350 0 Z"/>
+    </g>
+    <g fill="#2a4a41">
+      <path d="M340 0 C 400 22 470 26 530 16 C 490 44 430 52 380 44 C 420 62 470 64 510 58 C 465 80 405 80 360 62 C 335 48 330 22 330 0 Z"/>
+      <path d="M1100 0 C 1040 22 970 26 910 16 C 950 44 1010 52 1060 44 C 1020 62 970 64 930 58 C 975 80 1035 80 1080 62 C 1105 48 1110 22 1110 0 Z"/>
+    </g>
+
+    <!-- hanging moss wisps -->
+    <g stroke="#3d6154" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.7">
+      <path d="M260 60 C 258 78 262 92 258 108"/>
+      <path d="M300 84 C 298 100 302 112 298 126"/>
+      <path d="M1180 60 C 1182 78 1178 92 1182 108"/>
+      <path d="M1140 84 C 1142 100 1138 112 1142 126"/>
+    </g>
+  </svg>
+
+  <div class="title-block">
+    <div class="eyebrow center">Sea to Sky Trails &middot; Vol.&nbsp;II, No.&nbsp;02 &middot; Garibaldi Provincial Park</div>
+    <h1>Cheakamus Lake</h1>
+    <p class="deck">Three and a half kilometres of old-growth cedar and hemlock, almost no climbing, and then a lake the colour of glacier milk stirred into ink. The easiest big-payoff walk on the whole corridor &mdash; and somehow still the quiet one.</p>
+  </div>
+
+  <div class="coordstrip">
+    <div class="inner">
+      <span>Lat <b>&asymp;50.02&deg; N</b></span>
+      <span>Lon <b>&asymp;122.93&deg; W</b></span>
+      <span>Elev <b>&asymp;840 m</b></span>
+      <span>To lake <b>&asymp;3.5 km</b></span>
+      <span>Gain <b>&asymp;100 m</b></span>
+      <span>To Singing Creek <b>&asymp;7 km</b></span>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== KM LINE ===================== -->
+<section class="kmline" id="trail">
+  <div class="wrap">
+    <div class="eyebrow">The Trail, Kilometre by Kilometre</div>
+    <h2>A flat line through very tall things.</h2>
+    <div class="km-scroll">
+      <div class="km-track">
+        <div class="km-stop">
+          <span class="km">0.0<small>km</small></span>
+          <h3>Trailhead</h3>
+          <p>End of the gravel road above the Cheakamus River. Pit toilet, information board, and the sudden quiet of big timber. Read the signage &mdash; park rules here change seasonally.</p>
+        </div>
+        <div class="km-stop">
+          <span class="km">&asymp;1.5<small>km</small></span>
+          <h3>The big trunks</h3>
+          <p>The forest goes properly old: cedar and hemlock wide enough to hide a person behind, moss to the knees, river noise drifting up through the trees. The trail barely bothers to climb.</p>
+        </div>
+        <div class="km-stop lake">
+          <span class="km">&asymp;3.5<small>km</small></span>
+          <h3>Lake outlet</h3>
+          <p>The trees open and the colour hits &mdash; glacier-fed turquoise stretching back toward the icefields. Campsites, log-jam foregrounds, and most people&rsquo;s turnaround.</p>
+        </div>
+        <div class="km-stop lake">
+          <span class="km">&asymp;7.0<small>km</small></span>
+          <h3>Singing Creek</h3>
+          <p>Carry on along the north shore &mdash; rolling, rooty, worth it &mdash; to a quieter beach and a second set of campsites. This is where the day-trippers aren&rsquo;t.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NOTEBOOK ===================== -->
+<section class="notebook" id="notebook">
+  <div class="wrap">
+    <div class="notebook-grid">
+      <div class="essay">
+        <div class="eyebrow">From the Notebook</div>
+        <h2 style="margin-bottom:1.75rem;">The lake that asks almost nothing.</h2>
+        <p>Garibaldi Provincial Park mostly makes you earn it. Panorama Ridge is a full day. Wedgemount is a wall. And then there&rsquo;s Cheakamus Lake, tucked into the park&rsquo;s southwest corner behind Whistler, where the entire price of admission is a forest walk you could do in running shoes: about 3.5 kilometres one-way, with something like a hundred metres of gain &mdash; barely enough to notice.</p>
+        <p>The approach starts near Cheakamus Crossing and Function Junction at the south end of Whistler, then follows 7&ndash;8 kilometres of gravel road to the trailhead. In a normal summer an ordinary 2WD car manages it fine, though it&rsquo;s a forest road, not a highway &mdash; check current conditions before you commit, especially early or late in the season.</p>
+        <div class="pull">&ldquo;The trees do the first act. The colour does the second.&rdquo;</div>
+        <p>What makes the walk itself worth writing down is the forest. This is genuine old growth &mdash; western redcedar and hemlock on a scale that resets your sense of what a tree is &mdash; and the trail runs level through it, so you spend the whole approach looking up instead of at your feet. Then the canopy breaks and the lake arrives all at once: big, cold, and that impossible glacial turquoise, milky with rock flour, walled in by the park&rsquo;s ridgelines.</p>
+        <p>Most people stop at the outlet. If the shoreline crowd bothers you, keep going &mdash; the trail continues along the north shore to Singing Creek, about 7 kilometres from the car in total, trading a little rooty up-and-down for beaches you might have to yourself. Either way you&rsquo;re back at the trailhead by dinner, which is the whole charm: an alpine-lake reward for a valley-floor effort.</p>
+      </div>
+
+      <aside class="quickstats" aria-label="Quick take">
+        <h4>Quick Take</h4>
+        <dl>
+          <div class="qrow"><dt>Distance to lake</dt><dd>&asymp;3.5 km one-way</dd></div>
+          <div class="qrow"><dt>Elevation gain</dt><dd>&asymp;100 m</dd></div>
+          <div class="qrow"><dt>To Singing Creek</dt><dd>&asymp;7 km one-way</dd></div>
+          <div class="qrow"><dt>Difficulty</dt><dd>Easy</dd></div>
+          <div class="qrow"><dt>Access road</dt><dd>&asymp;7&ndash;8 km gravel</dd></div>
+          <div class="qrow"><dt>Park</dt><dd>Garibaldi Prov.</dd></div>
+          <div class="qrow"><dt>Camping</dt><dd>Lake + Singing Cr.</dd></div>
+          <div class="qrow"><dt>Water</dt><dd>Glacial. Cold.</dd></div>
+        </dl>
+        <p class="foot">Garibaldi&rsquo;s day-use and overnight rules change seasonally &mdash; check <a class="ln" href="https://bcparks.ca/" target="_blank" rel="noopener">BC Parks</a> before you drive up.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REMEMBER ===================== -->
+<section class="remember">
+  <div class="wrap">
+    <div class="eyebrow">Field Notes</div>
+    <h2>Six things people come home talking about.</h2>
+    <div class="rem-grid">
+      <div class="rem-item">
+        <div class="n">i.</div>
+        <div>
+          <h3>The colour</h3>
+          <p>Glacier-fed turquoise that photographs like a filter and isn&rsquo;t one. Brightest under summer sun, moodier &mdash; and arguably better &mdash; under cloud.</p>
+        </div>
+      </div>
+      <div class="rem-item">
+        <div class="n">ii.</div>
+        <div>
+          <h3>The old growth</h3>
+          <p>Cedar and hemlock big enough that the walk in would justify itself even if there were no lake at the end of it.</p>
+        </div>
+      </div>
+      <div class="rem-item">
+        <div class="n">iii.</div>
+        <div>
+          <h3>The effort-to-payoff ratio</h3>
+          <p>Roughly a hundred metres of gain for a full glacial-lake reveal. Nothing else in the corridor gives you this much for this little.</p>
+        </div>
+      </div>
+      <div class="rem-item">
+        <div class="n">iv.</div>
+        <div>
+          <h3>The swim, briefly</h3>
+          <p>Swimmable if you&rsquo;re brave. The kind of cold that ends the conversation in about forty-five seconds and gets retold for years.</p>
+        </div>
+      </div>
+      <div class="rem-item">
+        <div class="n">v.</div>
+        <div>
+          <h3>Singing Creek&rsquo;s quiet</h3>
+          <p>Push past the outlet and the crowd thins to almost nothing. A gravel beach, the creek, and a lot of lake to look at.</p>
+        </div>
+      </div>
+      <div class="rem-item">
+        <div class="n">vi.</div>
+        <div>
+          <h3>The mosquitoes</h3>
+          <p>Remembered less fondly. Early summer here is bug country &mdash; bring repellent or donate blood. They ease off as the season dries out.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SEASONS ===================== -->
+<section class="seasons on-dark" id="seasons">
+  <div class="wrap">
+    <div class="eyebrow">When to Go</div>
+    <h2>The lake keeps its own calendar.</h2>
+    <p class="intro" style="margin-top:1.25rem;">It sits around 800-and-some metres, so the season runs longer than the alpine &mdash; but this is still Garibaldi. Snow lingers, bugs bloom, and access rules shift with the seasons.</p>
+
+    <div class="season-table">
+      <div class="season-row">
+        <div class="when">May &ndash; June</div>
+        <div class="what">Snow usually clears earlier here than the high country, but the road and trail can be soft and the river runs loud. Peak mosquito season arrives as things warm &mdash; come armed. Check road and trail conditions before driving up.</div>
+        <div class="verdict">Quiet, buggy</div>
+      </div>
+      <div class="season-row">
+        <div class="when">July &ndash; August</div>
+        <div class="what">Prime time. The turquoise is at full saturation, the gravel road is normally fine for 2WD, and the outlet gets its daily crowd. Go early, or go past it to Singing Creek. Bugs taper as summer dries out.</div>
+        <div class="verdict">Peak colour</div>
+      </div>
+      <div class="season-row">
+        <div class="when">September &ndash; October</div>
+        <div class="what">The sleeper pick. Cooler air, thinner crowds, low-angle light on the water. The colour softens as glacial melt slows, but the forest more than covers the difference.</div>
+        <div class="verdict">Locals&rsquo; season</div>
+      </div>
+      <div class="season-row">
+        <div class="when">November &ndash; April</div>
+        <div class="what">Snow country. The road is generally not a summer-car proposition and the trail becomes a winter route for people with the gear and judgment for it. Not the version of this trip this guide describes.</div>
+        <div class="verdict">Experts only</div>
+      </div>
+    </div>
+
+    <p class="season-note">Garibaldi Provincial Park has day-use and overnight rules that change seasonally. Whatever you&rsquo;ve heard from a friend&rsquo;s trip last year may be out of date &mdash; check the <a href="https://bcparks.ca/" target="_blank" rel="noopener">BC Parks</a> page for the park before you go.</p>
+  </div>
+</section>
+
+<!-- ===================== CAMPING ===================== -->
+<section class="camping" id="camping">
+  <div class="narrow">
+    <div class="eyebrow">Staying the Night</div>
+    <h2>Two camps, one easy carry.</h2>
+    <p style="margin-top:1.25rem;">Because the walk in is so gentle, Cheakamus is one of the friendliest overnight introductions in Garibaldi &mdash; a real backcountry camp that doesn&rsquo;t demand a real backcountry approach.</p>
+
+    <div class="camp-grid">
+      <div class="camp-card">
+        <span class="tag">&asymp;3.5 km in</span>
+        <h3>Cheakamus Lake camp</h3>
+        <p>Sites near the outlet where the trail first meets the water. The short carry makes it popular &mdash; expect neighbours on summer weekends, and book ahead.</p>
+      </div>
+      <div class="camp-card">
+        <span class="tag">&asymp;7 km in</span>
+        <h3>Singing Creek camp</h3>
+        <p>Another 3.5 km along the north shore buys you the quieter beach. The extra distance filters the crowd better than any reservation system could.</p>
+      </div>
+    </div>
+
+    <div class="reserve-note">
+      <strong>Before you pack</strong>
+      Backcountry camping here is managed through <a class="ln" href="https://bcparks.ca/" target="_blank" rel="noopener">BC Parks</a> reservations, and Garibaldi&rsquo;s overnight rules shift seasonally &mdash; confirm the current system before you commit to a date. And this is black bear country: store food properly, cook away from your tent, and pack out everything.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HONEST NOTE ===================== -->
+<section class="honest">
+  <div class="narrow">
+    <div class="eyebrow">Honest Note</div>
+    <h2>What the postcards leave out.</h2>
+    <p style="margin-top:1.5rem;">The water is beautiful and it is <em>cold</em> &mdash; glacier-fed, all season, no exceptions. Swim if you like, but treat it as a plunge, not a pool, and keep an eye on anyone small.</p>
+    <p>Early summer belongs to the mosquitoes. This is the single most common complaint about an otherwise gentle trip, and it&rsquo;s a fair one &mdash; June at the lake without repellent is a character-building exercise.</p>
+    <p>Black bears are common through this valley. That&rsquo;s not a reason to stay home; it&rsquo;s a reason to keep food sealed and stored properly, make a bit of noise on quiet stretches of trail, and never leave a pack unattended on the shore.</p>
+    <p>And the gravel road: normally fine for a regular car in summer, but &ldquo;normally&rdquo; is doing some work in that sentence. Washboard, potholes, and early-season surprises happen. <em>Check conditions, drive slowly, and leave nothing visible in the car at the trailhead.</em></p>
+  </div>
+</section>
+
+<!-- ===================== TRAILHEAD SUPPORT ===================== -->
+<section class="support">
+  <div class="wrap">
+    <div class="eyebrow">Trailhead Support</div>
+    <h2>This one&rsquo;s a hike, not a paddle.</h2>
+    <div class="support-grid">
+      <div>
+        <p style="margin-top:0.75rem;">No rental fleet waits at this trailhead, and that&rsquo;s part of the appeal. But if you want help with the logistics &mdash; overnight gear dropped to you in the corridor, or a local guide to run the day so you just walk &mdash; the same Squamish outfit behind these guides handles both.</p>
+        <a class="support-cta" href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Gear &amp; guide bookings</a>
+      </div>
+      <div class="support-aside">
+        <h3>Missing the water already?</h3>
+        <p>If the turquoise leaves you wanting an actual day <em>on</em> a lake, the corridor&rsquo;s canoe rentals live down in Squamish &mdash; <a class="ln" href="https://squamishcanoerental.com/" target="_blank" rel="noopener">Squamish Canoe Rental</a> delivers boats (up to three paddlers each) to the paddling lakes at the other end of the highway.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="narrow">
+    <div class="eyebrow">Questions &amp; Answers</div>
+    <h2>What people actually ask about Cheakamus Lake.</h2>
+
+    <div class="faq-list">
+      <details class="qa">
+        <summary>How hard is the Cheakamus Lake hike?</summary>
+        <div class="ans">
+          <p>Genuinely easy by Garibaldi standards. It&rsquo;s about 3.5 km one-way to the lake outlet with only around 100 m of elevation gain &mdash; a mostly level forest walk on good trail. Most reasonably mobile people, including kids, can manage it comfortably. Continuing along the north shore to Singing Creek makes it roughly 7 km one-way with some rolling, rooty sections, but still nothing technical in summer conditions.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Can a regular 2WD car get to the trailhead?</summary>
+        <div class="ans">
+          <p>Normally, yes. From the Cheakamus Crossing / Function Junction area at the south end of Whistler, it&rsquo;s about 7&ndash;8 km of gravel forest road to the trailhead, and in a typical summer an ordinary car handles it at a careful pace. That said, it&rsquo;s a gravel road &mdash; conditions vary with weather and season, so check current reports before you go, especially in spring or fall.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Do I need a day pass or permit for Cheakamus Lake?</summary>
+        <div class="ans">
+          <p>Garibaldi Provincial Park has day-use and overnight rules that change seasonally, and they&rsquo;ve changed more than once in recent years &mdash; so rather than repeat something that may be stale, we&rsquo;ll say this plainly: check the <a class="ln" href="https://bcparks.ca/" target="_blank" rel="noopener">BC Parks</a> page for Garibaldi before every trip. It takes two minutes and saves a wasted drive.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Can you camp at Cheakamus Lake?</summary>
+        <div class="ans">
+          <p>Yes &mdash; there are backcountry campsites near the lake outlet (about 3.5 km in) and at Singing Creek (about 7 km in), reserved through BC Parks. The gentle approach makes this one of the best first backcountry overnights in the corridor. Singing Creek is the quieter of the two; the extra 3.5 km of shoreline trail does the crowd-filtering for you.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Can you swim in Cheakamus Lake?</summary>
+        <div class="ans">
+          <p>If you&rsquo;re brave. The lake is glacier-fed and stays seriously cold all summer &mdash; think short, loud plunge rather than afternoon float. On a hot August day it&rsquo;s a glorious shock. There are no lifeguards and the water is deep and cold enough to take seriously, so keep swims short and stay close to shore.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Are there bears? What about bugs?</summary>
+        <div class="ans">
+          <p>Both, honestly. Black bears are common in this valley &mdash; store food properly (especially overnight), keep a clean camp, and make some noise on quiet stretches. Mosquitoes are the other resident: early summer can be intense at the lake, so bring repellent and maybe a head net for June trips. Both problems fade as the season goes on.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Is Cheakamus Lake a good alternative to Joffre Lakes?</summary>
+        <div class="ans">
+          <p>It&rsquo;s the classic Whistler-side answer when <a class="ln" href="https://joffrelake.com/">Joffre</a> passes are gone or the parking lot news scares you off. You trade Joffre&rsquo;s stacked-lakes drama for a bigger single lake, far older forest, and a much easier walk &mdash; and generally a calmer day. Same turquoise family, quieter cousin.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Can you canoe or paddle on Cheakamus Lake?</summary>
+        <div class="ans">
+          <p>There&rsquo;s no boat launch and no rentals at the lake &mdash; anything you paddle, you carry 3.5 km through the forest first, which is why almost nobody does. If a paddling day is what you&rsquo;re really after, the drive-up canoe lakes around <a class="ln" href="https://squamishcanoerental.com/" target="_blank" rel="noopener">Squamish</a> down the highway are the practical answer, or browse the other <a class="ln" href="https://seatoskytrails.com/">Sea to Sky Trails guides</a> for lakes where the boat meets you at the shore.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>This Guide</h4>
+        <p>Cheakamus Lake is entry No.&nbsp;02 in Volume&nbsp;II of the <a class="ln" href="https://seatoskytrails.com/" style="color:#e8efe9;">Sea to Sky Trails</a> &mdash; a slow-built field guide to the lakes, trails, and quiet corners of the Coast Mountains. Written by people who keep going back.</p>
+      </div>
+      <div>
+        <h4>More Field Guides</h4>
+        <ul>
+          <li><a href="https://joffrelake.com/">Joffre Lakes</a></li>
+          <li><a href="https://callaghanlake.com/">Callaghan Lake</a></li>
+          <li><a href="https://cirquelake.com/">Cirque Lake</a></li>
+          <li><a href="https://alicelakesquamish.com/">Alice Lake</a></li>
+          <li><a href="https://riverofgoldendreams.ca/">River of Golden Dreams</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>On the Water</h4>
+        <ul>
+          <li><a href="https://squamishcanoerental.com/">Squamish Canoe Rental</a></li>
+          <li><a href="https://squamishwatertaxi.com/tours.html">Howe Sound boat tours</a></li>
+          <li><a href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Gear &amp; guide bookings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>Published with respect in the shared territory of the S&#7731;wx&#818;w&uacute;7mesh (Squamish) and L&#824;il&#824;wat7&uacute;l (L&iacute;l&#824;wat) Nations.</div>
+      <div><em>Sea to Sky Trails</em> &middot; Vol.&nbsp;II, No.&nbsp;02</div>
+      <div>Set in Fraunces &amp; Inter. Reader-funded.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STRUCTURED DATA ===================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Cheakamus Lake",
+  "description": "A large glacier-fed turquoise lake in Garibaldi Provincial Park, reached by an easy 3.5 km old-growth forest trail from a gravel-road trailhead south of Whistler, BC. Backcountry campsites at the lake and at Singing Creek.",
+  "url": "https://cheakamuslake.com/",
+  "isAccessibleForFree": true,
+  "touristType": ["Hikers", "Backcountry campers", "Families"],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.02,
+    "longitude": -122.93
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Whistler",
+    "addressRegion": "BC",
+    "addressCountry": "CA"
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Garibaldi Provincial Park"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How hard is the Cheakamus Lake hike?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Genuinely easy by Garibaldi standards. It is about 3.5 km one-way to the lake outlet with only around 100 m of elevation gain — a mostly level forest walk on good trail that most people, including kids, can manage comfortably. Continuing along the north shore to Singing Creek makes it roughly 7 km one-way with some rolling, rooty sections, but nothing technical in summer conditions." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a regular 2WD car get to the Cheakamus Lake trailhead?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Normally, yes. From the Cheakamus Crossing / Function Junction area at the south end of Whistler it is about 7 to 8 km of gravel forest road to the trailhead, and in a typical summer an ordinary car handles it at a careful pace. Conditions vary with weather and season, so check current reports before you go, especially in spring or fall." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a day pass or permit for Cheakamus Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Garibaldi Provincial Park has day-use and overnight rules that change seasonally and have changed more than once in recent years. Check the BC Parks page for Garibaldi before every trip rather than relying on last year's information." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you camp at Cheakamus Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. There are backcountry campsites near the lake outlet (about 3.5 km in) and at Singing Creek (about 7 km in), reserved through BC Parks. The gentle approach makes this one of the best first backcountry overnights in the Sea to Sky corridor, and Singing Creek is the quieter of the two camps." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you swim in Cheakamus Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If you're brave. The lake is glacier-fed and stays seriously cold all summer — a short plunge rather than an afternoon float. There are no lifeguards and the water is deep and cold, so keep swims short and stay close to shore." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there bears and bugs at Cheakamus Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both. Black bears are common in the valley — store food properly, keep a clean camp, and make noise on quiet stretches of trail. Mosquitoes can be intense in early summer, so bring repellent for June trips. Both ease off as the season goes on." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Cheakamus Lake a good alternative to Joffre Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It's the classic Whistler-side answer when Joffre Lakes passes are gone. You trade Joffre's stacked-lakes drama for a bigger single lake, much older forest, an easier walk, and generally a calmer day." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you canoe or paddle on Cheakamus Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "There is no boat launch and no rentals at the lake — anything you paddle has to be carried 3.5 km through the forest, so almost nobody does. For a paddling day, the drive-up canoe lakes around Squamish down the highway are the practical choice, with local delivery rentals available (canoes seat up to three paddlers)." }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
